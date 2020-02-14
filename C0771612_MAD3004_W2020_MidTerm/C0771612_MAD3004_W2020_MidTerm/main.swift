@@ -12,6 +12,10 @@ import Foundation
 var c1=Customer(1, "Shree", "Marella", "mvsrikanth96@gmail.com")
 c1.Display()
 
+var c2=Customer(2, "Prem", "rajan", "premrajan@gmail.com")
+c2.Display()
+
+
 
 
 
