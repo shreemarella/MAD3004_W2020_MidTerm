@@ -9,6 +9,9 @@
 import Foundation
 
 
-var c1=Customer(12, "Shree", "Marella", "mvsrikanth96@gmail.com")
+var c1=Customer(1, "Shree", "Marella", "mvsrikanth96@gmail.com")
 c1.Display()
+
+
+
 
