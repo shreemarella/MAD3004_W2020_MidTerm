@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Customer
+class Customer : IDisplay
 {
     var customerId : Int
     var firstName  : String = ""
@@ -18,6 +18,8 @@ class Customer
         return "\(firstName) \(lastName)"
     }
     var emailId     : String
+    var Bills = [Int : String]()
+    var totalAmountToPay : Double = 0.0
     
     init(_ customerId:Int,_ firstName:String,_ lastName:String,/*_ fullName:String,*/_ emailId:String)
     {
@@ -35,5 +37,8 @@ class Customer
         //print("lastName      : \(self.firstName)")
         print("fullName      : \(self.fullName)")
         print("emailId       : \(self.emailId)")
+        print("         -----Bill Information-----          ")
+        print("*********************************************")
+        
     }
 }
