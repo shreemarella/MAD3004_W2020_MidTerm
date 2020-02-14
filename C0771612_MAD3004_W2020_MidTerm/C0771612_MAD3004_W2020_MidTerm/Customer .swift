@@ -11,24 +11,28 @@ import Foundation
 class Customer
 {
     var customerId : Int
-    var firstName  : String
-    var lastName   : String
+    var firstName  : String = ""
+    var lastName   : String = ""
     var fullName   : String
+    {
+        return "\(firstName) \(lastName)"
+    }
     var emailId     : String
     
-    init(_ customerId:Int,_ firstName:String,_ lastName:String,_ fullName:String,_ emailId:String)
+    init(_ customerId:Int,_ firstName:String,_ lastName:String,/*_ fullName:String,*/_ emailId:String)
     {
         self.customerId = customerId
         self.firstName  = firstName
         self.lastName   = lastName
-        self.fullName   = fullName
+        //self.fullName   = fullName
         self.emailId    = emailId
     }
      func Display()
     {
+        print("************Customer Details**************")
         print("customerId    : \(self.customerId)")
-        print("firstName     : \(self.firstName)")
-        print("lastName      : \(self.firstName)")
+        //print("firstName     : \(self.firstName)")
+        //print("lastName      : \(self.firstName)")
         print("fullName      : \(self.fullName)")
         print("emailId       : \(self.emailId)")
     }
