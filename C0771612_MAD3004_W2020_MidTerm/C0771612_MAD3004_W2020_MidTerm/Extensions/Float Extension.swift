@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+extension Float
+{
+    func InternetGb() -> String
+    {
+        return "\(self) GB"
+    }
+}
