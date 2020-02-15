@@ -11,9 +11,9 @@ import Foundation
 class Hydro : Bill
 {
     var agencyName : String
-    var unitsConsumed : String
+    var unitsConsumed : Int
     
-    init(_ billIdentificationNumber:Int,_ billDate:Date,_ billType:String,_  totalBillAmount:Double,_ agencyName:String,_ unitsConsumed:String)
+    init(_ billIdentificationNumber:Int,_ billDate:Date,_ billType:BillType,_  totalBillAmount:Double,_ agencyName:String,_ unitsConsumed:Int)
     {
         self.agencyName = agencyName
         self.unitsConsumed = unitsConsumed
@@ -22,8 +22,8 @@ class Hydro : Bill
     override func Display()
     {
         super.Display()
-        print("agencyName    : \(self.agencyName) ")
-        print("unitsConsumed : \(self.unitsConsumed)")
+        print("Agency Name    : \(self.agencyName) ")
+        print("Units Consumed : \(self.unitsConsumed)")
         
     }
 }

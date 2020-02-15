@@ -11,20 +11,20 @@ import Foundation
 class Internet : Bill
 {
     var providerName : String
-    var internetGbUse : String
+    var internetGbUsed : Float
     
-    init(_ billIdentificationNumber:Int,_ billDate:Date,_ billType:String,_  totalBillAmount:Double,_ providerName:String,_ internetGbUse:String)
+    init(_ billIdentificationNumber:Int,_ billDate:Date,_ billType:BillType,_  totalBillAmount:Double,_ providerName:String,_ internetGbUsed:Float)
     {
         self.providerName   = providerName
-        self.internetGbUse = internetGbUse 
+        self.internetGbUsed = internetGbUsed
         super.init(billIdentificationNumber,billDate,billType,totalBillAmount)
         
         }
     override func Display()
     {
         super.Display()
-        print("providerName    : \(self.providerName)")
-        print("internetGbUsed  : \(self.internetGbUse)")
+        print("ProviderName    : \(self.providerName)")
+        print("InternetGbUsed  : \(self.internetGbUsed)")
     }
 }
 

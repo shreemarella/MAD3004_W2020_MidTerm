@@ -18,7 +18,7 @@ class Customer : IDisplay
         return "\(firstName) \(lastName)"
     }
     var emailId     : String
-    var Bills = [Int : String]()
+    var Bills = [String : Bill]()
     var totalAmountToPay : Double = 0.0
     
     init(_ customerId:Int,_ firstName:String,_ lastName:String,/*_ fullName:String,*/_ emailId:String)
