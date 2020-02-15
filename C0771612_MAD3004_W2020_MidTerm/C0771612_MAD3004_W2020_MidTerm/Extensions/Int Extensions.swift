@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+extension Int
+{
+    func unitsconsumption() -> String
+    {
+        return "\(self) Units"
+    }
+}
