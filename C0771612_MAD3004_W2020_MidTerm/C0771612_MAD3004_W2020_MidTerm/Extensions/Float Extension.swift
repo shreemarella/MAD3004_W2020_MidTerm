@@ -14,4 +14,9 @@ extension Float
     {
         return "\(self) GB"
     }
+    func minutesUsage() -> String
+    {
+        return "\(self) Minutes"
+    }
+    
 }
