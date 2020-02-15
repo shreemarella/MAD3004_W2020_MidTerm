@@ -13,8 +13,8 @@ class Mobile : Bill
     var mobileManufacturerName : String
     var planName               : String
     var mobileNumber           : Int
-    var internetGbUsed         : Float
-    var minutesUsed            : Float
+    var internetGbUsed         : Float = 0.0
+    var minutesUsed            : Float = 0.0
     
     init(_ billIdentificationNumber:Int,_ billDate:Date,_ billType:BillType,_  totalBillAmount:Double,_ mobileManufacturerName:String,_ planName:String,_ mobileNumber:Int,_ internetGbUsed:Float,_ minutesUsed:Float)
     {

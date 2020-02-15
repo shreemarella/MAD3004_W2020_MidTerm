@@ -14,6 +14,8 @@
 		2D811E0E23F6134200634BF9 /* Mobile .swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D811E0D23F6134200634BF9 /* Mobile .swift */; };
 		2D811E1023F6168200634BF9 /* Hydro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D811E0F23F6168200634BF9 /* Hydro.swift */; };
 		2D811E1223F617F200634BF9 /* Customer .swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D811E1123F617F200634BF9 /* Customer .swift */; };
+		2D811E1723F77B2D00634BF9 /* Float Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D811E1623F77B2D00634BF9 /* Float Extension.swift */; };
+		2D811E1923F77B4500634BF9 /* Int Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D811E1823F77B4500634BF9 /* Int Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +39,8 @@
 		2D811E0D23F6134200634BF9 /* Mobile .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mobile .swift"; sourceTree = "<group>"; };
 		2D811E0F23F6168200634BF9 /* Hydro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hydro.swift; sourceTree = "<group>"; };
 		2D811E1123F617F200634BF9 /* Customer .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Customer .swift"; sourceTree = "<group>"; };
+		2D811E1623F77B2D00634BF9 /* Float Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float Extension.swift"; sourceTree = "<group>"; };
+		2D811E1823F77B4500634BF9 /* Int Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,7 @@
 		2D811DFF23F60B0800634BF9 /* C0771612_MAD3004_W2020_MidTerm */ = {
 			isa = PBXGroup;
 			children = (
+				2D811E1323F77A4A00634BF9 /* Extensions */,
 				2D811E0023F60B0800634BF9 /* main.swift */,
 				2D811E0723F60E1F00634BF9 /* Bill.swift */,
 				2D811E0923F60E3A00634BF9 /* IDisplay.swift */,
@@ -78,6 +83,15 @@
 				2D811E1123F617F200634BF9 /* Customer .swift */,
 			);
 			path = C0771612_MAD3004_W2020_MidTerm;
+			sourceTree = "<group>";
+		};
+		2D811E1323F77A4A00634BF9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2D811E1623F77B2D00634BF9 /* Float Extension.swift */,
+				2D811E1823F77B4500634BF9 /* Int Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +155,10 @@
 				2D811E0823F60E1F00634BF9 /* Bill.swift in Sources */,
 				2D811E0123F60B0800634BF9 /* main.swift in Sources */,
 				2D811E0C23F60FB100634BF9 /* Internet.swift in Sources */,
+				2D811E1723F77B2D00634BF9 /* Float Extension.swift in Sources */,
 				2D811E1223F617F200634BF9 /* Customer .swift in Sources */,
 				2D811E0A23F60E3A00634BF9 /* IDisplay.swift in Sources */,
+				2D811E1923F77B4500634BF9 /* Int Extensions.swift in Sources */,
 				2D811E1023F6168200634BF9 /* Hydro.swift in Sources */,
 				2D811E0E23F6134200634BF9 /* Mobile .swift in Sources */,
 			);
