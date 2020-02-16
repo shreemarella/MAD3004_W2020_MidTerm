@@ -30,12 +30,20 @@ class Customer : IDisplay
         self.emailId    = emailId
     }
     
+    func totalBill() -> Double
+    {
+        for b in BillsD
+        {
+            totalAmountToPay += b.value.totalBillAmount
+        }
+        return totalAmountToPay
+    }
+    
+    
     func insertbills(Bills : Bill, customerId : String)
     {
         BillsD.updateValue(Bills, forKey : customerId)
     }
-    
-    
     
      func Display()
     {

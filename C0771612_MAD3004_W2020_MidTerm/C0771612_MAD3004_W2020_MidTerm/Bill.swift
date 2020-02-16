@@ -20,9 +20,9 @@ class Bill : IDisplay
     var billIdentificationNumber : Int
     var billDate                 : Date
     var billType                 : BillType
-    var totalBillAmount          : Float
+    var totalBillAmount          : Double
     
-    init(_ billIdentificationNumber:Int,_ billDate:Date,_ billType:BillType,_  totalBillAmount:Float)
+    init(_ billIdentificationNumber:Int,_ billDate:Date,_ billType:BillType,_  totalBillAmount:Double)
     {
         self.billIdentificationNumber = billIdentificationNumber
         self.billDate                 = billDate
