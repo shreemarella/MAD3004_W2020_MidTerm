@@ -11,7 +11,9 @@ import Foundation
 
 var c1=Customer("C001", "Shree", "Marella", "mvsrikanth96@gmail.com")
 var c2=Customer("C002", "Prem", "rajan", "premrajan@gmail.com")
+var c3=Customer("C003", "Harsha", "Dama", "harshadama2312@gmail.com")
 
+var b1=Bill("B001", Date(), BillType.Hydro, 50)
 
 
 
