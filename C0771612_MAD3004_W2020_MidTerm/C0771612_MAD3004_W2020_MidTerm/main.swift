@@ -14,6 +14,7 @@ var c2=Customer("C002", "Prem", "rajan", "premrajan@gmail.com")
 var c3=Customer("C003", "Harsha", "Dama", "harshadama2312@gmail.com")
 
 var b1=Bill("B001", Date(), BillType.Hydro, 50)
+var b2=Bill("B002", Date(), BillType.Internet, 75.89 )
 
 
 
