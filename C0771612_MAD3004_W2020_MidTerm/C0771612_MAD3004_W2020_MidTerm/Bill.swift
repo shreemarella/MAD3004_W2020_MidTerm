@@ -17,12 +17,12 @@ enum BillType
 class Bill : IDisplay
 {
 
-    var billIdentificationNumber : Int
+    var billIdentificationNumber : String
     var billDate                 : Date
     var billType                 : BillType
     var totalBillAmount          : Double
     
-    init(_ billIdentificationNumber:Int,_ billDate:Date,_ billType:BillType,_  totalBillAmount:Double)
+    init(_ billIdentificationNumber:String,_ billDate:Date,_ billType:BillType,_  totalBillAmount:Double)
     {
         self.billIdentificationNumber = billIdentificationNumber
         self.billDate                 = billDate
