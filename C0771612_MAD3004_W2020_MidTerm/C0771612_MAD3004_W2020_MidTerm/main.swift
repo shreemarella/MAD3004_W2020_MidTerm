@@ -28,7 +28,21 @@ var h2=Hydro("HD002", Date(), BillType.Hydro, 55.65, "Toronto Saver", 56)
 var h3=Hydro("HD003", Date(), BillType.Hydro, 73.21, "Blue Fox Energy", 65)
 
 var i1=Internet("IN001", Date(), BillType.Internet, 56.50, "Rogers", 500)
-var i2=Internet("IN002", DAte(), BillType.Internet, 45.98, "Freedom", 365)
+var i2=Internet("IN002", Date(), BillType.Internet, 45.98, "Freedom", 365)
+
+c1.insertbills(Bills: m1, customerId: "\(m1.billIdentificationNumber)")
+c1.insertbills(Bills: h1, customerId: "\(h1.billIdentificationNumber)")
+c1.insertbills(Bills: i1, customerId: "\(i1.billIdentificationNumber)")
+//c1.Display()
+
+c2.insertbills(Bills: m2, customerId: "\(m2.billIdentificationNumber)")
+c2.insertbills(Bills: h2, customerId: "\(h2.billIdentificationNumber)")
+c2.insertbills(Bills: i2, customerId: "\(i2.billIdentificationNumber)")
+//c2.Display()
+
+
+c3.insertbills(Bills: h3, customerId: "\(h3.billIdentificationNumber)")
+//c3.Display()
 
 
 
