@@ -25,6 +25,9 @@ var m2=Mobile("MB002", Date(), BillType.Mobile, 300.78, "Apple Inc. iPhone XI MA
 
 var h1=Hydro("HD001", Date(), BillType.Hydro, 45.35, "Planet Energy", 29)
 var h2=Hydro("HD002", Date(), BillType.Hydro, 55.65, "Toronto Saver", 56)
+var h3=Hydro("HD003", Date(), BillType.Hydro, 73.21, "Blue Fox Energy", 65)
+
+var i1=Internet(<#T##billIdentificationNumber: String##String#>, <#T##billDate: Date##Date#>, <#T##billType: BillType##BillType#>, <#T##totalBillAmount: Float##Float#>, <#T##providerName: String##String#>, <#T##internetGbUsed: Float##Float#>)
 
 
 
