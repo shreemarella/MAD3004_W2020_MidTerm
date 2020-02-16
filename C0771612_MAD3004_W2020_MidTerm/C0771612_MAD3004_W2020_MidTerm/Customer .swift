@@ -56,7 +56,21 @@ class Customer : IDisplay
         print("         -----Bill Information-----          ")
         print("*********************************************")
         
+        for b in BillsD
+        {
+            b.value.Display()
+            print("******************************************")
+        }
         
+        if BillsD.count == 0
+        {
+            print("No Bills Found")
+        }
+        else
+        {
+            print("Total Bill Amount To Pay : \(String(describing: totalBill))")
+            print("*********************************************")
+        }
         
     }
 }
