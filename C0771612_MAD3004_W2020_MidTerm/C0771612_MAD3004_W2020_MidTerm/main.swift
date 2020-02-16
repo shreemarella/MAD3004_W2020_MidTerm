@@ -24,7 +24,7 @@ var m1=Mobile("MB001", Date(), BillType.Mobile, 250.69, "Galaxy Samsung Inc.",  
 var m2=Mobile("MB002", Date(), BillType.Mobile, 300.78, "Apple Inc. iPhone XI MAX Pro",  "LTE+3G 9.5GB Promo plan", +19012345678, 8.90, 230)
 
 var h1=Hydro("HD001", Date(), BillType.Hydro, 45.35, "Planet Energy", 29)
-
+var h2=Hydro("HD002", Date(), BillType.Hydro, 55.65, "Toronto Saver", 56)
 
 
 
