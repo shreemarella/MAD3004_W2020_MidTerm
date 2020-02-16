@@ -18,7 +18,7 @@ class Customer : IDisplay
         return "\(firstName) \(lastName)"
     }
     var emailId     : String
-    lazy var Bills = [String : Bill]()
+    lazy var BillsD = [String : Bill]()
     var totalAmountToPay : Double = 0.0
     
     init(_ customerId:Int,_ firstName:String,_ lastName:String,/*_ fullName:String,*/_ emailId:String)
@@ -32,8 +32,11 @@ class Customer : IDisplay
     
     func insertbills(Bills : Bill, customerId : String)
     {
-        
+        BillsD.updateValue(Bills, forKey : customerId)
     }
+    
+    
+    
      func Display()
     {
         print("************Customer Details**************")
@@ -44,6 +47,8 @@ class Customer : IDisplay
         print("emailId       : \(self.emailId)")
         print("         -----Bill Information-----          ")
         print("*********************************************")
+        
+        
         
     }
 }
