@@ -18,8 +18,8 @@ extension Float
     {
         return "\(self) Minutes"
     }
-    func totalBill() -> String
+    func totalBillAmount() -> String
     {
-        return "\(self) $ "
+        return "\(self) $"
     }
 }

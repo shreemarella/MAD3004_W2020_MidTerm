@@ -16,7 +16,7 @@ class Mobile : Bill
     var internetGbUsed         : Float = 0.0
     var minutesUsed            : Float = 0.0
     
-    init(_ billIdentificationNumber:Int,_ billDate:Date,_ billType:BillType,_  totalBillAmount:Double,_ mobileManufacturerName:String,_ planName:String,_ mobileNumber:Int,_ internetGbUsed:Float,_ minutesUsed:Float)
+    init(_ billIdentificationNumber:String,_ billDate:Date,_ billType:BillType,_  totalBillAmount:Float,_ mobileManufacturerName:String,_ planName:String,_ mobileNumber:Int,_ internetGbUsed:Float,_ minutesUsed:Float)
     {
         self.mobileManufacturerName = mobileManufacturerName
         self.planName               = planName
@@ -31,8 +31,8 @@ class Mobile : Bill
         print("mobileManufacturerName  : \(self.mobileManufacturerName)")
         print("planName                : \(self.planName)")
         print("mobileNumber            : \(self.mobileNumber)")
-        print("internetGbUsed          : \(self.internetGbUsed)")
-        print("minutesUsed             : \(self.minutesUsed)")
+        print("internetGbUsed          : \(self.internetGbUsed.InternetGb())")
+        print("minutesUsed             : \(self.minutesUsed.minutesUsage())")
         
     }
 }

@@ -19,7 +19,7 @@ class Customer : IDisplay
     }
     var emailId     : String
     lazy var BillsD = [String : Bill]()
-    var totalAmountToPay : Double = 0.0
+    var totalAmountToPay : Float = 0.0
     
     init(_ customerId:String,_ firstName:String,_ lastName:String,/*_ fullName:String,*/_ emailId:String)
     {
@@ -30,7 +30,7 @@ class Customer : IDisplay
         self.emailId    = emailId
     }
     
-    func totalBill() -> Double
+    func totalBill() -> Float
     {
         for b in BillsD
         {
@@ -68,7 +68,7 @@ class Customer : IDisplay
         }
         else
         {
-            print("Total Bill Amount To Pay : \(String(describing: totalBill))")
+            print("Total Bill Amount To Pay : \(totalBill())")
             print("*********************************************")
         }
         

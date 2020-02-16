@@ -13,7 +13,7 @@ class Internet : Bill
     var providerName : String
     var internetGbUsed : Float
     
-    init(_ billIdentificationNumber:Int,_ billDate:Date,_ billType:BillType,_  totalBillAmount:Double,_ providerName:String,_ internetGbUsed:Float)
+    init(_ billIdentificationNumber:String,_ billDate:Date,_ billType:BillType,_  totalBillAmount:Float,_ providerName:String,_ internetGbUsed:Float)
     {
         self.providerName   = providerName
         self.internetGbUsed = internetGbUsed
@@ -24,7 +24,7 @@ class Internet : Bill
     {
         super.Display()
         print("ProviderName    : \(self.providerName)")
-        print("InternetGbUsed  : \(self.internetGbUsed)")
+        print("InternetGbUsed  : \(self.internetGbUsed.InternetGb())")
     }
 }
 
