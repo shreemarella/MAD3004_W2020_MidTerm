@@ -16,10 +16,11 @@ var c3=Customer("C003", "Harsha", "Dama", "harshadama2312@gmail.com")
 var b1=Bill("B001", Date(), BillType.Hydro, 50)
 var b2=Bill("B002", Date(), BillType.Internet, 75.89 )
 var b3=Bill("B003", Date(), BillType.Mobile, 125)
-b1.Display()
-b2.Display()
-b3.Display()
+//b1.Display()
+//b2.Display()
+//b3.Display()
 
+var m1=Mobile("MB001", Date, BillType.Mobile, 250.69, Galaxy Samsung Inc.,  Prepaid Talk + Text plan, +11234567890, 7.89, 356)
 
 
 
