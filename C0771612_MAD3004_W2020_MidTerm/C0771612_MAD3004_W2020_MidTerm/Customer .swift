@@ -18,7 +18,7 @@ class Customer : IDisplay
         return "\(firstName) \(lastName)"
     }
     var emailId     : String
-    var Bills = [String : Bill]()
+    lazy var Bills = [String : Bill]()
     var totalAmountToPay : Double = 0.0
     
     init(_ customerId:Int,_ firstName:String,_ lastName:String,/*_ fullName:String,*/_ emailId:String)
@@ -28,6 +28,11 @@ class Customer : IDisplay
         self.lastName   = lastName
         //self.fullName   = fullName
         self.emailId    = emailId
+    }
+    
+    func insertbills(Bills : Bill, customerId : String)
+    {
+        
     }
      func Display()
     {
