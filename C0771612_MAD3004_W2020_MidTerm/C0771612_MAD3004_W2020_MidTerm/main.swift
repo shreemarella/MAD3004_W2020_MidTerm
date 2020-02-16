@@ -23,6 +23,10 @@ var b3=Bill("B003", Date(), BillType.Mobile, 125)
 var m1=Mobile("MB001", Date(), BillType.Mobile, 250.69, "Galaxy Samsung Inc.",  "Prepaid Talk + Text plan", +11234567890, 7.89, 356)
 var m2=Mobile("MB002", Date(), BillType.Mobile, 300.78, "Apple Inc. iPhone XI MAX Pro",  "LTE+3G 9.5GB Promo plan", +19012345678, 8.90, 230)
 
+var h1=Hydro("HD001", Date(), BillType.Hydro, 45.35, "Planet Energy", 29)
+
+
+
 
 
 
