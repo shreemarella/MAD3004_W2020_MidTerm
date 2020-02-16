@@ -9,14 +9,10 @@
 import Foundation
 
 
-var c1=Customer(1, "Shree", "Marella", "mvsrikanth96@gmail.com")
-c1.Display()
+var c1=Customer("C001", "Shree", "Marella", "mvsrikanth96@gmail.com")
 
-var c2=Customer(2, "Prem", "rajan", "premrajan@gmail.com")
-c2.Display()
 
-var c3=Customer(3, "Harsha", "Dama", "harshadama2312@gmail.com")
-c3.Display()
+
 
 
 

@@ -10,7 +10,7 @@ import Foundation
 
 class Customer : IDisplay
 {
-    var customerId : Int
+    var customerId : String
     var firstName  : String = ""
     var lastName   : String = ""
     var fullName   : String
@@ -21,7 +21,7 @@ class Customer : IDisplay
     lazy var BillsD = [String : Bill]()
     var totalAmountToPay : Double = 0.0
     
-    init(_ customerId:Int,_ firstName:String,_ lastName:String,/*_ fullName:String,*/_ emailId:String)
+    init(_ customerId:String,_ firstName:String,_ lastName:String,/*_ fullName:String,*/_ emailId:String)
     {
         self.customerId = customerId
         self.firstName  = firstName
