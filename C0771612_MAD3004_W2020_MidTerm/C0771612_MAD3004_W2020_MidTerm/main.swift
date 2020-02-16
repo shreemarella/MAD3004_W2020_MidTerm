@@ -10,7 +10,7 @@ import Foundation
 
 
 var c1=Customer("C001", "Shree", "Marella", "mvsrikanth96@gmail.com")
-
+var c2=Customer("C002", "Prem", "rajan", "premrajan@gmail.com")
 
 
 
