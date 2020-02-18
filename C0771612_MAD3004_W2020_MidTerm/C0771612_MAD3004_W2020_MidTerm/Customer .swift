@@ -37,7 +37,18 @@ class Customer : IDisplay
         }
     }
     
-   
+   //https://stackoverflow.com/questions/25471114/how-to-validate-an-e-mail-address-in-swift used reference from here for email validation process
+      //https://regexr.com/ used for regex reader
+      
+      
+      func validateEmail(enteredEmail:String) -> Bool
+      {
+
+          let emailFormat = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+          let emailPredicate = NSPredicate(format:"SELF MATCHES %@", emailFormat)
+          return emailPredicate.evaluate(with: enteredEmail)
+
+      }
     
     func totalBill() -> Float
     {
@@ -56,19 +67,19 @@ class Customer : IDisplay
     
      func Display()
     {
-        print("************Customer Details**************")
+        print("\t ************Customer Details**************")
         print("customerId    : \(self.customerId)")
         //print("firstName     : \(self.firstName)")
         //print("lastName      : \(self.firstName)")
         print("fullName      : \(self.fullName)")
-        print("emailId       : \(self.emailId)")
-        print("         -----Bill Information-----          ")
-        print("*********************************************")
+        print("emailId       : \(String(describing: self.emailId))")
+        print("\t         -----Bill Information-----          ")
+        print("\t *********************************************")
         
         for b in BillsD
         {
             b.value.Display()
-            print("******************************************")
+            print("\t ******************************************")
         }
         
         if BillsD.count == 0
@@ -77,8 +88,8 @@ class Customer : IDisplay
         }
         else
         {
-            print("Total Bill Amount To Pay : \(totalBill())")
-            print("*********************************************")
+            print("\t Total Bill Amount To Pay : \(totalBill())")
+            print("\t *********************************************")
         }
         
     }
