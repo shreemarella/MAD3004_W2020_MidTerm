@@ -47,8 +47,7 @@ print(dateFormatter.string(from: date)) // December 31*/
 var c1=Customer("C001", "Shree", "Marella", "mvsrikanth96@gmail.com")
 var c2=Customer("C002", "Prem", "rajan", "premrajan@gmail.com")
 var c3=Customer("C003", "Harsha", "Dama", "harshadama2312@gmail.com")
-var c4=Customer("c004", "shawn", "Marcell", "asdkajshdka.sd")
-//c4.Display()
+
 //get invalid email id since the input we gave has a wrong regex that of we given in function code
 
 
@@ -71,6 +70,8 @@ var h3=Hydro("HD003", Date.from(year: 2019, month: 02, day: 09) ?? Date(), BillT
 var i1=Internet("IN001", Date.from(year: 2019, month: 10, day: 14) ?? Date(), BillType.Internet, 56.50, "Rogers", 500)
 var i2=Internet("IN002", Date.from(year: 2018, month: 09, day: 07) ?? Date(), BillType.Internet, 45.98, "Freedom", 365)
 
+
+var in1=Insurance("In001", Date.from(year: 2019, month: 04, day: 15) ?? Date(), BillType.Insurance, 7000, "Drone", InsuranceType.CAR, Date.from(year: 2018, month: 01, day: 01) ?? Date() ,Date.from(year: 2019, month: 01, day: 01) ?? Date(), 365, 10000)
 c1.insertbills(Bills: m1, customerId: "\(m1.billIdentificationNumber)")
 c1.insertbills(Bills: h1, customerId: "\(h1.billIdentificationNumber)")
 c1.insertbills(Bills: i1, customerId: "\(i1.billIdentificationNumber)")
@@ -83,7 +84,14 @@ c2.Display()
 
 
 c3.insertbills(Bills: h3, customerId: "\(h3.billIdentificationNumber)")
+c3.insertbills(Bills: in1, customerId: "\(in1.billIdentificationNumber)")
 c3.Display()
+
+var c4=Customer("c004", "shawn", "Marcell", "asdkajshdka.sd")
+c4.Display()
+
+var m3=Mobile("MB003", Date.from(year: 2018, month: 11, day: 15) ?? Date(), BillType.Mobile, 300.78, "Apple Inc. iPhone XI MAX Pro",  "LTE+3G 9.5GB Promo plan", "+1901234", 8.90, 230)
+m3.Display()
 
 
 
