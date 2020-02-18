@@ -19,9 +19,9 @@ class Insurance : Bill
     var startDate               : Date
     var endDate                 : Date
     var totalDays               : Int
-    var totalInstallmentsAmount : Double
+    var totalInstallmentsAmount : Float
     
-    init(_ billIdentificationNumber:String,_ billDate:Date,_ billType:BillType,_ totalBillAmount:Float,_ insuranceProviderName:String,_ typeOfInsurance:InsuranceType,_ startDate:Date,_ endDate:Date,_ totalDays:Int,_ totalInstallmentsAmount:Double)
+    init(_ billIdentificationNumber:String,_ billDate:Date,_ billType:BillType,_ totalBillAmount:Float,_ insuranceProviderName:String,_ typeOfInsurance:InsuranceType,_ startDate:Date,_ endDate:Date,_ totalDays:Int,_ totalInstallmentsAmount:Float)
     {
         self.insuranceProviderName   = insuranceProviderName
         self.typeOfInsurance         = typeOfInsurance
@@ -40,7 +40,7 @@ class Insurance : Bill
         print(" \t Start Date              : \(self.startDate)")
         print(" \t End Date                : \(self.endDate)")
         print(" \t Total Days              : \(self.totalDays)")
-        print(" \t totalInstallmentsAmount : \(self.totalInstallmentsAmount)")
+        print(" \t totalInstallmentsAmount : \(self.totalInstallmentsAmount.totalBillAmount())")
     }
     
     
