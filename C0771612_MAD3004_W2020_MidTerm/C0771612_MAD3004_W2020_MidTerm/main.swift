@@ -8,23 +8,31 @@
 
 import Foundation
 
+//https://developer.apple.com/documentation/foundation/dateformatter took reference for date function
+//https://medium.com/@tjcarney89/using-dateformatter-to-format-dates-and-times-from-apis-57622ce11d04 took reference for dateformat
+
 let dateFormatter = DateFormatter()
-let date = Date(timeIntervalSinceReferenceDate: 410220000)
- 
-// US English Locale (en_US)
+dateFormatter.dateFormat = "yyyy-MM-dd"
+/*let timeFormatter = DateFormatter()
+timeFormatter.dateFormat = "HH-mm-ss"*/
+/*let newDateFormatter = dateFormatter
+newDateFormatter.dateFormat = "MMM d"*/
+
+/*let date = Date(timeIntervalSinceReferenceDate: 410220000)
+ // US English Locale (en_US)
 dateFormatter.locale = Locale(identifier: "en_US")
 dateFormatter.setLocalizedDateFormatFromTemplate("MMMMd") // set template after setting locale
-print(dateFormatter.string(from: date)) // December 31
+print(dateFormatter.string(from: date)) // December 31*/
 
 
 var c1=Customer("C001", "Shree", "Marella", "mvsrikanth96@gmail.com")
 var c2=Customer("C002", "Prem", "rajan", "premrajan@gmail.com")
 var c3=Customer("C003", "Harsha", "Dama", "harshadama2312@gmail.com")
 
-var b1=Bill("B001", Date(), BillType.Hydro, 50)
+var b1=Bill("B001", dateFormatter.date(from :"2020-02-12")!, BillType.Hydro, 50)
 var b2=Bill("B002", Date(), BillType.Internet, 75.89 )
 var b3=Bill("B003", Date(), BillType.Mobile, 125)
-//b1.Display()
+b1.Display()
 //b2.Display()
 //b3.Display()
 
