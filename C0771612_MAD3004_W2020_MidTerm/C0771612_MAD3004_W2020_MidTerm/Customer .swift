@@ -33,7 +33,7 @@ class Customer : IDisplay
         }
         else
         {
-            print("Invalid Email Id : \(self.emailId ?? "")")
+            print("Invalid Email Id  : \(emailId)  for this customer ID \(customerId)") //
         }
     }
     
@@ -88,7 +88,7 @@ class Customer : IDisplay
         }
         else
         {
-            print("\t Total Bill Amount To Pay : \(totalBill())")
+            print("\t Total Bill Amount To Pay : \(totalBill().totalBillAmount())")
             print("\t *********************************************")
         }
         
