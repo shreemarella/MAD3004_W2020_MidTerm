@@ -8,6 +8,14 @@
 
 import Foundation
 
+let dateFormatter = DateFormatter()
+let date = Date(timeIntervalSinceReferenceDate: 410220000)
+ 
+// US English Locale (en_US)
+dateFormatter.locale = Locale(identifier: "en_US")
+dateFormatter.setLocalizedDateFormatFromTemplate("MMMMd") // set template after setting locale
+print(dateFormatter.string(from: date)) // December 31
+
 
 var c1=Customer("C001", "Shree", "Marella", "mvsrikanth96@gmail.com")
 var c2=Customer("C002", "Prem", "rajan", "premrajan@gmail.com")
