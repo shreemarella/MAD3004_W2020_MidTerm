@@ -8,6 +8,8 @@
 
 import Foundation
 
+//https://cocoacasts.com/four-clever-uses-of-swift-extensions used help for extensions
+
 extension Int
 {
     func unitsconsumption() -> String
