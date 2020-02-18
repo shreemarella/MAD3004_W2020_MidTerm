@@ -17,7 +17,7 @@ class Customer : IDisplay
     {
         return "\(firstName) \(lastName)"
     }
-    var emailId     : String
+    var emailId     : String?
     lazy var BillsD = [String : Bill]()
     var totalAmountToPay : Float = 0.0
     
@@ -27,8 +27,17 @@ class Customer : IDisplay
         self.firstName  = firstName
         self.lastName   = lastName
         //self.fullName   = fullName
-        self.emailId    = emailId
+        if validateEmail(enteredEmail : emailId)
+        {
+        self.emailId = emailId
+        }
+        else
+        {
+            print("Invalid Email Id : \(self.emailId ?? "")")
+        }
     }
+    
+   
     
     func totalBill() -> Float
     {
