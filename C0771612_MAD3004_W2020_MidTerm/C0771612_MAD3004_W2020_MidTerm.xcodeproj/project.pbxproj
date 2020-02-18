@@ -16,6 +16,7 @@
 		2D811E1223F617F200634BF9 /* Customer .swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D811E1123F617F200634BF9 /* Customer .swift */; };
 		2D811E1723F77B2D00634BF9 /* Float Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D811E1623F77B2D00634BF9 /* Float Extension.swift */; };
 		2D811E1923F77B4500634BF9 /* Int Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D811E1823F77B4500634BF9 /* Int Extensions.swift */; };
+		2D811E1B23FC581700634BF9 /* Insurance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D811E1A23FC581600634BF9 /* Insurance.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +42,7 @@
 		2D811E1123F617F200634BF9 /* Customer .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Customer .swift"; sourceTree = "<group>"; };
 		2D811E1623F77B2D00634BF9 /* Float Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float Extension.swift"; sourceTree = "<group>"; };
 		2D811E1823F77B4500634BF9 /* Int Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int Extensions.swift"; sourceTree = "<group>"; };
+		2D811E1A23FC581600634BF9 /* Insurance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Insurance.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				2D811E0023F60B0800634BF9 /* main.swift */,
 				2D811E0723F60E1F00634BF9 /* Bill.swift */,
 				2D811E0923F60E3A00634BF9 /* IDisplay.swift */,
+				2D811E1A23FC581600634BF9 /* Insurance.swift */,
 				2D811E0B23F60FB100634BF9 /* Internet.swift */,
 				2D811E0D23F6134200634BF9 /* Mobile .swift */,
 				2D811E0F23F6168200634BF9 /* Hydro.swift */,
@@ -160,6 +163,7 @@
 				2D811E0A23F60E3A00634BF9 /* IDisplay.swift in Sources */,
 				2D811E1923F77B4500634BF9 /* Int Extensions.swift in Sources */,
 				2D811E1023F6168200634BF9 /* Hydro.swift in Sources */,
+				2D811E1B23FC581700634BF9 /* Insurance.swift in Sources */,
 				2D811E0E23F6134200634BF9 /* Mobile .swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

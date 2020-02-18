@@ -12,11 +12,11 @@ class Mobile : Bill
 {
     var mobileManufacturerName : String
     var planName               : String
-    var mobileNumber           : Int
+    var mobileNumber           : String
     var internetGbUsed         : Float = 0.0
     var minutesUsed            : Float = 0.0
     
-    init(_ billIdentificationNumber:String,_ billDate:Date,_ billType:BillType,_  totalBillAmount:Float,_ mobileManufacturerName:String,_ planName:String,_ mobileNumber:Int,_ internetGbUsed:Float,_ minutesUsed:Float)
+    init(_ billIdentificationNumber:String,_ billDate:Date,_ billType:BillType,_  totalBillAmount:Float,_ mobileManufacturerName:String,_ planName:String,_ mobileNumber:String,_ internetGbUsed:Float,_ minutesUsed:Float)
     {
         self.mobileManufacturerName = mobileManufacturerName
         self.planName               = planName
@@ -55,14 +55,19 @@ class Mobile : Bill
        return (false, .PhoneNumber)
    }*/
     
+    func validateMobileNumber(enternumber : String) -> Bool {
+       let regularExpressionForPhone = "^(?:\\+?1[-.●]?)?\\(?([0-9]{3})\\)?[-.●]?([0-9]{3})[-.●]?([0-9]{4})$"
+       let testPhone = NSPredicate(format:"SELF MATCHES %@", regularExpressionForPhone)
+       return testPhone.evaluate(with: enternumber)
+    }
     override func Display()
     {
         super.Display()
-        print("mobileManufacturerName  : \(self.mobileManufacturerName)")
-        print("planName                : \(self.planName)")
-        print("mobileNumber            : \(self.mobileNumber)")
-        print("internetGbUsed          : \(self.internetGbUsed.InternetGb())")
-        print("minutesUsed             : \(self.minutesUsed.minutesUsage())")
+        print(" \t mobileManufacturerName  : \(self.mobileManufacturerName)")
+        print(" \t planName                : \(self.planName)")
+        print(" \t mobileNumber            : \(self.mobileNumber)")
+        print(" \t internetGbUsed          : \(self.internetGbUsed.InternetGb())")
+        print(" \t minutesUsed             : \(self.minutesUsed.minutesUsage())")
         
     }
 }

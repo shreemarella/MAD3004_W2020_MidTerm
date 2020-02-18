@@ -20,7 +20,7 @@ class Customer : IDisplay
     var emailId     : String?
     lazy var BillsD = [String : Bill]()
     var totalAmountToPay : Float = 0.0
-    
+    public static var customerDetails = [Customer]()
     init(_ customerId:String,_ firstName:String,_ lastName:String,/*_ fullName:String,*/_ emailId:String)
     {
         self.customerId = customerId
