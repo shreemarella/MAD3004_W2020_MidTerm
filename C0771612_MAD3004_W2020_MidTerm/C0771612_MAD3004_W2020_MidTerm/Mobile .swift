@@ -20,11 +20,41 @@ class Mobile : Bill
     {
         self.mobileManufacturerName = mobileManufacturerName
         self.planName               = planName
-        self.mobileNumber           = mobileNumber
         self.internetGbUsed         = internetGbUsed
         self.minutesUsed            = minutesUsed
+        self.mobileNumber           = mobileNumber
         super.init(billIdentificationNumber,billDate,billType,totalBillAmount)
+        
+        if validateMobileNumber(enternumber : mobileNumber)
+        {
+                 self.mobileNumber       = mobileNumber
+        }
+             else
+             {
+                 print("Invalid Mobile Number : \(mobileNumber)")
+                 
+             }
     }
+    
+    /*func validateMobileNumber(value: Int) -> Bool {
+        let PHONE_REGEX = "^\\d{3}-\\d{3}-\\d{4}$"
+        let phoneTest = NSPredicate(format: "SELF MATCHES %@", PHONE_REGEX)
+        let result =  phoneTest.evaluate(with: value)
+        return result
+    }*/
+  
+    /*let PHONE_REGEX = "^\\d{3}-\\d{3}-\\d{4}$"
+
+   func validateMobileNumber(value: String) -> (Bool, Validationerror) {
+       if let phoneTest = NSPredicate(format: "SELF MATCHES %@", PHONE_REGEX) {
+           if phoneTest.evaluateWithObject(value) {
+               return (true, .NoError)
+           }
+           return (false, .PhoneNumber)
+       }
+       return (false, .PhoneNumber)
+   }*/
+    
     override func Display()
     {
         super.Display()

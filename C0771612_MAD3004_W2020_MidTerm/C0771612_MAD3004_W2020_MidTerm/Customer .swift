@@ -40,12 +40,7 @@ class Customer : IDisplay
    //https://stackoverflow.com/questions/25471114/how-to-validate-an-e-mail-address-in-swift used reference from here for email validation process
       //https://regexr.com/ used for regex reader
       
-    func validate(value: String) -> Bool {
-        let PHONE_REGEX = "^\\d{3}-\\d{3}-\\d{4}$"
-        let phoneTest = NSPredicate(format: "SELF MATCHES %@", PHONE_REGEX)
-        let result =  phoneTest.evaluate(with: value)
-        return result
-    }
+    
       
       func validateEmail(enteredEmail:String) -> Bool
       {
