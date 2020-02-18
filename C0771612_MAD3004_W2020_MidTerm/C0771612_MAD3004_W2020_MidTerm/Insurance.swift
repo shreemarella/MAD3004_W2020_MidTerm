@@ -21,14 +21,14 @@ class Insurance : Bill
     var totalDays               : Int
     var totalInstallmentsAmount : Float
     
-    init(_ billIdentificationNumber:String,_ billDate:Date,_ billType:BillType,_ totalBillAmount:Float,_ insuranceProviderName:String,_ typeOfInsurance:InsuranceType,_ startDate:Date,_ endDate:Date,_ totalDays:Int,_ totalInstallmentsAmount:Float)
+    init(_ billIdentificationNumber:String,_ billDate:Date,_ billType:BillType,_ totalBillAmount:Float,_ insuranceProviderName:String,_ typeOfInsurance:InsuranceType,_ startDate:Date,_ endDate:Date)
     {
         self.insuranceProviderName   = insuranceProviderName
         self.typeOfInsurance         = typeOfInsurance
         self.startDate               = startDate
         self.endDate                 = endDate
-        self.totalDays               = totalDays
-        self.totalInstallmentsAmount = totalInstallmentsAmount
+        self.totalDays               = Calendar.current.dateComponents([.day], from: startDate, to: endDate).day!
+        self.totalInstallmentsAmount = Float(totalDays * 50)
         super.init(billIdentificationNumber,billDate,billType,totalBillAmount)
     }
     

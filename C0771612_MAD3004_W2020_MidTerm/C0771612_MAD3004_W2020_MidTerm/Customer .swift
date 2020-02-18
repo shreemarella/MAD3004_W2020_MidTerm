@@ -17,10 +17,11 @@ class Customer : IDisplay
     {
         return "\(firstName) \(lastName)"
     }
-    var emailId     : String?
+    var emailId    : String = ""
     lazy var BillsD = [String : Bill]()
     var totalAmountToPay : Float = 0.0
-    public static var customerDetails = [Customer]()
+    
+    
     init(_ customerId:String,_ firstName:String,_ lastName:String,/*_ fullName:String,*/_ emailId:String)
     {
         self.customerId = customerId
@@ -69,13 +70,13 @@ class Customer : IDisplay
      func Display()
     {
         print("\t ************Customer Details**************")
-        print("customerId    : \(self.customerId)")
+        print(" \t customerId    : \(self.customerId)")
         //print("firstName     : \(self.firstName)")
         //print("lastName      : \(self.firstName)")
-        print("fullName      : \(self.fullName)")
-        print("emailId       : \(String(describing: self.emailId))")
-        print("\t         -----Bill Information-----          ")
-        print("\t *********************************************")
+        print(" \t fullName      : \(self.fullName)")
+        print(" \t emailId       : \(String(describing: self.emailId))")
+        print(" \t         -----Bill Information-----          ")
+        print(" \t *********************************************")
         
         for b in BillsD
         {

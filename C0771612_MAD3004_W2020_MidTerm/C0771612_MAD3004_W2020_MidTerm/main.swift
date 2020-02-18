@@ -71,7 +71,7 @@ var i1=Internet("IN001", Date.from(year: 2019, month: 10, day: 14) ?? Date(), Bi
 var i2=Internet("IN002", Date.from(year: 2018, month: 09, day: 07) ?? Date(), BillType.Internet, 45.98, "Freedom", 365)
 
 
-var in1=Insurance("In001", Date.from(year: 2019, month: 04, day: 15) ?? Date(), BillType.Insurance, 7000, "Drone", InsuranceType.CAR, Date.from(year: 2018, month: 01, day: 01) ?? Date() ,Date.from(year: 2019, month: 01, day: 01) ?? Date(), 365, 10000)
+var in1=Insurance("In001", Date.from(year: 2019, month: 04, day: 15) ?? Date(), BillType.Insurance, 7000, "Drone", InsuranceType.CAR, Date.from(year: 2018, month: 02, day: 01) ?? Date() ,Date.from(year: 2019, month: 01, day: 01) ?? Date())
 c1.insertbills(Bills: m1, customerId: "\(m1.billIdentificationNumber)")
 c1.insertbills(Bills: h1, customerId: "\(h1.billIdentificationNumber)")
 c1.insertbills(Bills: i1, customerId: "\(i1.billIdentificationNumber)")
@@ -93,6 +93,24 @@ c4.Display()
 var m3=Mobile("MB003", Date.from(year: 2018, month: 11, day: 15) ?? Date(), BillType.Mobile, 300.78, "Apple Inc. iPhone XI MAX Pro",  "LTE+3G 9.5GB Promo plan", "+1901234", 8.90, 230)
 m3.Display()
 
+/*var customers=Array<Customer>()
 
+//customers.append(c2)
 
+func GetCustomerById (customerid : String)
+{
+    for cust in customers
+    {
+        if (customerid == cust.customerId)
+        {
+            cust.Display()
+        }
+        else
+        {
+            print("\(cust.customerId) Customer not found")
+        }
+        
+    }
 
+}
+GetCustomerById(customerid: "c005")*/
